@@ -1,12 +1,127 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <ul class="">
+          <li>
+            <a href="index.html">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="pricelist.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="shop.html">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="index-logo">
+      <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп">
+    </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    <section class="features clearfix">
+      <div class="features-item">
+        <b class="features-name">Быстро</b>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+      </div>
+    </section>
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Новости</h2>
+          <ul class="news-preview">
+            <li>
+              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+              <time datetime="2016-01-11">11 january</time>
+            </li>
+            <li>
+              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
+              <time datetime="2016-01-18">18 january</time>
+            </li>
+          </ul>
+          <a href="#" class="btn">All news</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Фотогалерея</h2>
+        <div class="gallery">
+          <figure class="gallery-content">
+            <img src="img/photo-1.png" width="286" height="164" alt="">
+          </figure>
+          <button class="btn gallery-prev">Back</button>
+          <button class="btn gallery-next">Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Контактная информация</h2>
+          <p>Барбершоп Бородинский<br />
+          Адрес: г. Усть-Перепиздюйск, Б.Задроческая, д.20<br />
+          Телефон: +79119114141</p>
+          <p>Время работы:<br />
+          ПН - ПТ: круглосуточно (рабы)<br>
+          СБ - ВС: выходные (рабам надо спать)
+          </p>
+          <a class="btn" href="#">Обратная связь</a>
+          <a class="btn" href="#">Как проехать</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <input type="text" name="date" value="" placeholder="Дата">
+          <input type="text" name="time" value="" placeholder="Время">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="tel" name="phone" value="" placeholder="Телефон">
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-contacts">
+        Барбершоп Бородинский<br />
+        Адрес: г. Усть-Перепиздюйск, Б.Задроческая, д.20<br />
+        <a href="#">Как нас найти</a><br>
+        Телефон: +79119114141
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить</p>
+        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработчики</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
 </html>

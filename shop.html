@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <ul class="">
+          <li>
+            <a href="index.html">Информация</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="pricelist.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <!--title for shop-->
+<div class="pages">
+  <main class="container">
+      <h1 class="shop-title">Прайс-лист</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li> <!--current-->
+        </ul>
+  <!--Форма-->
+  <section class="shop-main">
+    <form class="shop-form clearfix" action="http://htmlacademy.com" method="post">
+      <fieldset class="shop-fieldset-1">
+      <legend class="shop-fieldset-legend">Производители:</legend>
+        <input type="checkbox" id="baxter">
+        <label for="baxter">Baxter of California</label><br>
+        <input type="checkbox" id="natty">
+        <label for="natty">Mr Natty</label><br>
+        <input type="checkbox" id="suavecito">
+        <label for="suavecito">Suavecito</label><br>
+        <input type="checkbox" id="malin">
+        <label for="malin">Malin-Goetz</label><br>
+        <input type="checkbox" id="murray">
+        <label for="murray">Murray`s</label><br>
+        <input type="checkbox" id="american">
+        <label for="american">American Crew</label>
+    </fieldset>
+      <fieldset class="shop-fieldset-2">
+      <legend class="shop-fieldset-legend">Группы товаров</legend>
+        <input type="radio" name="radioshop" value="shaving" id="shave">
+        <label for="shave">Бритвенные принадлежности</label><br>
+        <input type="radio" name="radioshop" value="washing" id="wash">
+        <label for="wash">Средства для ухода</label><br>
+        <input type="radio" name="radioshop" value="acsess" id="acs">
+        <label for="acs">Аксессуары</label>        
+    </fieldset>
+    <button class="btn" type="submit">Показать</button>
+    </form>
+  <!--Список товаров-->
+    <div class="shop-assortment clearfix">
+      <article class="shop-item">
+      <img src="img/item1.png" alt="baxter-travel">
+      <div class="shop-item-name">
+        <a class="item-link" href="item.html"><span>Набор для путешествий<br>
+          "Baxter of California"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">2300R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article><!--
+    --><article class="shop-item">
+      <img src="img/item2.png" alt="baxter-moist">
+      <div class="shop-item-name">
+        <a class="item-link" href="#"><span>Увлажняющий кондиционер<br>
+          "Baxter of California"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">750R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article><!--
+    --><article class="shop-item">
+      <img src="img/item3.png" alt="suavecito">
+      <div class="shop-item-name">
+        <a class="item-link" href="#"><span>Гель для волос<br>
+          "Suavecito"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">290R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article><!--
+    --><article class="shop-item">
+      <img src="img/item4.png" alt="american-ground">
+      <div class="shop-item-name">
+        <a class="item-link" href="#"><span>Глина для укладки волос<br>
+          "American Crew"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">500R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article><!--
+    --><article class="shop-item">
+      <img src="img/item5.png" alt="american-gel">
+      <div class="shop-item-name">
+        <a class="item-link" href="#"><span>Гель для волос<br>
+          "American Crew"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">300R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article><!--
+    --><article class="shop-item">
+      <img src="img/item6.png" alt="baxter-shave">
+      <div class="shop-item-name">
+        <a class="item-link" href="#"><span>Набор для бритья<br>
+          "Baxter of California"</span></a>
+      </div>
+      <div class="item-order">
+        <span class="item-price">3900R</span>
+        <a class="btn item-btn" href="#">Купить</a>
+      </div>
+    </article>
+    </div>
+  </section>
+    <!--Пагинатор-->
+    <div class="paginator">
+      <a href="#1">1</a>
+      <a class="current" href="#2">2</a>
+      <a href="#3">3</a>
+      <a href="#4">3</a>
+    </div>
+  </main>
+</div>
+  <footer class="main-footer ">
+    <div class="container clearfix">
+      <section class="footer-contacts">
+        Lorem ipsum dolor sit amet,<br>
+        consectetur adipisicing elit<br>
+        <a href="#">Как нас найти</a><br>
+        Телефон: +799-999-99-99
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить</p>
+        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработчики</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>
