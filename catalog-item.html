@@ -19,8 +19,8 @@
           <li>
             <a href="pricelist.html">Прайс-лист</a>
           </li>
-          <li>
-            <a href="shop.html">Магазин</a>
+          <li class="site-navigation-current">
+            <a href="catalog.html">Магазин</a>
           </li>
           <li>
             <a href="#">Контакты</a>
@@ -41,22 +41,24 @@
           <li><a href="#">Главная</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Средства для ухода</a></li>
-          <li><a class="active" href="#">Набор для путешествий "Вахтер вселенной"</a></li>
+          <li class="breadcrumbs-current">Набор для путешествий "Вахтер вселенной"</li>
         </ul>
     </div>
     <!--gallery-->
   <section class="item-gallery">
-    <figure class="main-item">
-      <img src="img/bax.png" width="460" height="498">
-    </figure>
-    <figure class="preview-items">
-      <img src="img/bax1.png" width="140" height="149">
-      <img src="img/bax2.png" width="140" height="149">
-      <img src="img/bax3.png" width="140" height="149">
-    </figure>
+    <h2 class="visually-hidden">Изображения товара</h2>
+    <p class="product-photo-full">
+      <img src="img/bax.png" width="460" height="498" alt="Фото всего набора">
+    </p>
+    <ul class="product-photo-preview">
+      <li><img src="img/bax1.png" width="140" height="149" alt="Фото в анфас"></li>
+      <li><img src="img/bax2.png" width="140" height="149" alt="Фото в профиль"></li>
+      <li><img src="img/bax3.png" width="140" height="149" alt="Фото отдельной части"></li>
+    </ul>
   </section>
   <!--item description-->
   <section class="item-info">
+    <h2 class="visually-hidden">Описание товара</h2>
     <div class="item-description">
       <b class="item-availability">Есть в наличии</b>
       <span class="item-article">Артикул такой-то</span>
@@ -69,7 +71,7 @@
     </div>
   <!--item set contents-->
     <div class="item-set">
-      <h2 class="item-set-title">В состав набора входят:</h2>
+      <h3 class="item-set-title">В состав набора входят:</h3>
       <ul class="item-set-list">
         <li>Элемент списка 1</li>
         <li>Элемент списка 2</li>
@@ -83,24 +85,23 @@
   </main>
 </div>
 <footer class="main-footer">
-  <div class="container clearfix">
-    <section class="footer-contacts">
-      Барбершоп Бородинский<br />
-      Адрес: г. Усть-Перепиздюйск, Б.Задроческая, д.20<br />
-      <a href="#">Как нас найти</a><br>
-      Телефон: +79119114141
-    </section>
-    <section class="footer-social">
-      <p>Давайте дружить</p>
-      <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
-      <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
-      <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-    </section>
-    <section class="footer-copyright">
-      <p>Разработчики</p>
-      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-    </section>
-  </div>
-</footer>
+      <p class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
 </body>
 </html>
