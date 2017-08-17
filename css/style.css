@@ -14,7 +14,7 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
-  background: #000000 url('C:/Users/ARTUR/Desktop/project/project/img/tint.png') no-repeat center top;
+  background: #000000 url('../img/tint.jpg') no-repeat center top;
 }
 
 .pages {
@@ -105,7 +105,7 @@ body {
   width: 18px;
   height: 18px;
 
-  background: transparent url('C:/Users/ARTUR/Desktop/project/project/img/icon-login.png') no-repeat;
+  background: transparent url('../img/login-arrow.svg') no-repeat;
   opacity: 0.3;
 }
 
@@ -583,7 +583,7 @@ body {
 
   color: #ffffff;
 
-  background: #252525 url('C:/Users/ARTUR/Desktop/project/project/img/footer-pattern.png');
+  background: #252525 url('../img/footer-pattern.jng');
 }
 
 .footer-contacts {
