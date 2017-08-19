@@ -28,16 +28,16 @@
         </ul>
       </nav>
       <div class="user-block">
-        <a class="login" href="#">Вход</a>
+        <a class="login" href="login.html">Вход</a>
       </div>
     </div>
   </header>
   <main class="container">
     <div class="index-logo">
-      <img src="img/index-logo.svg" width="368" height="204" alt="Барбершоп">
+      <img src="img/index-logo.svg" width="368" height="204" alt="Логотип барбершопа Бородинский">
     </div>
-
     <section class="features clearfix">
+      <h2 class="visually-hidden">Фишки нашего барбершопа</h2>
       <div class="features-item">
         <b class="features-name">Быстро</b>
         <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
@@ -51,57 +51,63 @@
         <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
       </div>
     </section>
-    <div class="index-content clearfix">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Новости</h2>
-          <ul class="news-preview">
-            <li>
-              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
-              <time datetime="2016-01-11">11 january</time>
-            </li>
-            <li>
-              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки</p>
-              <time datetime="2016-01-18">18 january</time>
-            </li>
-          </ul>
-          <a href="#" class="btn">All news</a>
-      </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Фотогалерея</h2>
-        <div class="gallery">
-          <figure class="gallery-content">
-            <img src="img/photo-1.jpg" width="286" height="164" alt="">
-          </figure>
-          <button class="btn gallery-prev">Back</button>
-          <button class="btn gallery-next">Next</button>
-        </div>
-      </div>
-    </div>
-    <div class="index-content clearfix">
-      <div class="index-content-left">
-        <h2 class="index-content-title">Контактная информация</h2>
-          <p>Барбершоп Бородинский<br />
-          Адрес: г. Усть-Перепиздюйск, Б.Задроческая, д.20<br />
-          Телефон: +79119114141</p>
-          <p>Время работы:<br />
-          ПН - ПТ: круглосуточно (рабы)<br>
-          СБ - ВС: выходные (рабам надо спать)
-          </p>
-          <a class="btn" href="#">Обратная связь</a>
-          <a class="btn" href="#">Как проехать</a>
-      </div>
-      <div class="index-content-right">
-        <h2 class="index-content-title">Записаться</h2>
+    <section class="news">
+      <h2 class="news-title">Новости</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2016-01-11">11 января</time>
+          </li>
+          <li class="news-item">
+            <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2016-01-18">18 января</time>
+          </li>
+        </ul>
+      <a class="button" href="news.html">Все новости</a>
+    </section>
+    <section class="gallery">
+      <h2 class="gallert-title">Фотогалерея</h2>
+        <figure class="gallery-content">
+          <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Интерьер"></a>
+        </figure>
+        <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+        <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+    </section>
+    <section class="contact-content clearfix">
+      <h2 class="contact-content-title">Контактная информация</h2>
+        <p>Барбершоп Бородинский<br />
+        Адрес: г. Усть-Перепиздюйск, Б.Задроческая, д.20<br />
+        Телефон: +79119114141</p>
+        <p>Время работы:<br />
+        ПН - ПТ: круглосуточно (рабы)<br>
+        СБ - ВС: выходные (рабам надо спать)
+        </p>
+        <a class="btn contact-btn" href="#">Обратная связь</a>
+        <a class="btn contact-btn" href="#">Как проехать</a>
+    </section>
+    <section class="appointment">
+      <h2 class="index-content-title">Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="date" value="" placeholder="Дата">
-          <input type="text" name="time" value="" placeholder="Время">
-          <input type="text" name="name" value="" placeholder="Ваше имя">
-          <input type="tel" name="phone" value="" placeholder="Телефон">
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-      </div>
-    </div>
+        <p class="appointment-item">
+          <label for="appointment-date">Дата</label>
+          <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-time">Время</label>
+          <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-name">Ваше имя</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-phone">Телефон</label>
+          <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
       <div class="container clearfix">
@@ -123,6 +129,38 @@
         <b>Разработано:</b> <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
-    </footer>
+  </footer>
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>

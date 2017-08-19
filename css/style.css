@@ -36,6 +36,7 @@ body {
   margin: 0 auto;
 }
 
+/*
 .main-header {
   color: #ffffff;
   background-color: #000000;
@@ -51,24 +52,24 @@ body {
 }
 
 .main-navigation ul {
-  margin: 0; /*убрать отступы*/
+  margin: 0; /*убрать отступы*
   padding: 0;
-  list-style: none; /*убрать точки*/
-  font-size: 0; /*убрать отступы у букв*/
+  list-style: none; /*убрать точки*
+  font-size: 0; /*убрать отступы у букв*
 }
 
 .main-navigation li {
-  display: inline-block; /*чтобы элементы выстроились в ряд*/
-  vertical-align: top; /*Выравнивание текста*/
+  display: inline-block; /*чтобы элементы выстроились в ряд*
+  vertical-align: top; /*Выравнивание текста*
   font-size: 16px;
   line-height: 20px;
 }
 
 .main-navigation a {
   display: block; /*для паддингов*/
-  padding: 25px 20px; /*отступы для того, чтобы высота хедера была 70пкс*/
+  padding: 25px 20px; /*отступы для того, чтобы высота хедера была 70пкс*
   color: #ffffff;
-  text-decoration: none; /*убираем подчеркивание ссылок*/
+  text-decoration: none; /*убираем подчеркивание ссылок*
 }
 
 .main-navigation a:hover {
@@ -157,15 +158,15 @@ body {
 
 .features-name::after {
   content: "";
-  position: absolute; /*позиционируем кубики*/
-  bottom: 0; /*прикрепление относительно нижней части заголовка*/
-  left: 50%; /*центрирование*/
+  position: absolute; /*позиционируем кубики*
+  bottom: 0; /*прикрепление относительно нижней части заголовка*
+  left: 50%; /*центрирование*
   display: block;
   width: 20px;
   height: 20px;
   margin-left: -10px;
   background-color: #ffffff;
-  transform: rotate(45deg); /*разворот кубиков*/
+  transform: rotate(45deg); /*разворот кубиков*
 }
 
 .index-content {
@@ -277,7 +278,7 @@ body {
   right: 0;
 }
 
-/*определяем стили для формы*/
+/*определяем стили для формы*
 .appointment-form input {
   float: left;
   width: 106px;
@@ -293,7 +294,7 @@ body {
 }
 
 .appointment-form input:focus {
-  border: 2px solid #663d15; /*цвет рамки при нажатии на поле формы*/
+  border: 2px solid #663d15; /*цвет рамки при нажатии на поле формы*
 }
 
 .appointment-form input:nth-child(2n) {
@@ -305,7 +306,7 @@ body {
   width: 100%;
 }
 
-/*SHOP PAGE*/
+/*SHOP PAGE
 
 .shop-title {
   margin: 0;
@@ -468,7 +469,7 @@ body {
 
 /*ITEM PAGE*/
 
-/*PRICELIST*/
+/*PRICELIST*
 
 .item-title {
   margin: 0;
@@ -575,7 +576,7 @@ body {
   font-size: 0;
 }
 
-/*FOOTER*/
+/*FOOTER*
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
@@ -644,3 +645,5 @@ body {
 .social-btn-fb {
   background-position: 15px -171px;
 }
+
+*/
